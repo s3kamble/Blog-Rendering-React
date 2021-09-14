@@ -80,6 +80,11 @@
 5. For more information,on backend functionalities and features and its configurations,visit:
 * [Backend for Blog rendering](https://github.com/s3kamble/Blog-rendering/README.md)
 
+6. Else,you can use the backend server available (hosted on heroku).Follow the steps given to use the server.
+  - Open "Blog.jsx" and use the heroku dataUrl(commented) insted of local url.
+  - Open "Home.jsx" and use the heroku dataUrl(commented) insted of local url.
+  - *** This url will only work if server is not on maintainence mode ,it is recommended configure local backend and use it***
+
 # Installation
 
 1. Open a new termainal window,navigate to the folder where you want the froent-end apllication sub-folder to be created
