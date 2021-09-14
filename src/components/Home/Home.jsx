@@ -34,8 +34,8 @@ useEffect(()=>{
         <div className={styles.tiles}>
            { 
            blogData.map((blog)=>{      
-                return <div  className={styles.blogTile}>
-                        <Blogs key={blog._id} data={blog} />  
+                return <div  key={blog.blogId}  className={styles.blogTile}>
+                        <Blogs data={blog} />  
                     </div>
                 // return <Blogs key={blog.blogId} data={blog} />       
 

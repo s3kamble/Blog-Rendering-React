@@ -22,10 +22,12 @@ function Blog(){
             console.log(data)   
             // const foundBlog = data.find(blog => blog.id === params.id); 
             const foundBlog = data.data.find(blog => blog.blogId === params.id); 
-
+            
             setBlog(foundBlog)
             // setLinks(foundBlog.links)
             setLinks(foundBlog.relatedLinks)
+       console.log(typeof(foundBlog.createdAt))
+
 
         })
         .catch((err)=>{
@@ -33,19 +35,20 @@ function Blog(){
         })
         
        },[params.id])
+
+
     return(
         <div>
            {/* <h2>{blog.title}</h2> */}
            {/* <img src={blog.imageUrl} alt="Blog Image" /> */}
            {/* <div>{blog.content}</div> */}
 
-
            <div className={styles.blogInfo}>            
                <img src={blog.blogImage} alt="Blog" className={styles.blogImage} />
                <div className={styles.blogAbout}>
                     <h2 className={styles.blogHeading}>{blog.blogTitle}</h2>
                     <h5 className={styles.blogAuthor}>Created By:{blog.author} </h5>
-                    <p>{blog.createdAt}</p> 
+                    <p>{new Date(blog.createdAt).toLocaleDateString("en-US",{   day: 'numeric' , month: 'long', year: 'numeric' })}</p> 
                </div>
            </div>
          

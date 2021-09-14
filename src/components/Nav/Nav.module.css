@@ -47,6 +47,7 @@
     color:indianred;
     font-family:cursive;
     font-weight:bolder;
+    margin-left: 10rem;
 }
 
 
@@ -56,4 +57,15 @@
     }
 }
 
+@media(max-width:950px){
+    .title{
+        margin-left: 5rem;
+    }
+}
+
+@media(max-width:550px){
+    .title{
+        margin-left: 0;
+    }
+}
 
