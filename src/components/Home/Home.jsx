@@ -3,7 +3,7 @@ import Blogs from "../Blogs/Blogs";
 import styles from "../Home/Home.module.css"
 
 
-// let dataUrl="https://s3kamble.github.io/webpage-rendering-data/blogData.json";
+// let dataUrl="https://blogs-data.herokuapp.com/blogs";
 let dataUrl="http://localhost:4000/blogs"
 
 
@@ -17,9 +17,6 @@ useEffect(()=>{
      return response.json()
  })
  .then((data)=>{
-     console.log(data.data)
-    //  setBlogData(data)     
-
      setBlogData(data.data)     
  })
  .catch((err)=>{
@@ -36,8 +33,7 @@ useEffect(()=>{
            blogData.map((blog)=>{      
                 return <div  key={blog.blogId}  className={styles.blogTile}>
                         <Blogs data={blog} />  
-                    </div>
-                // return <Blogs key={blog.blogId} data={blog} />       
+                    </div>     
 
             })
             }

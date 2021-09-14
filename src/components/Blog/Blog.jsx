@@ -3,7 +3,7 @@ import {useParams} from "react-router-dom"
 import Aside from '../Aside/Aside';
 import styles from '../Blog/Blog.module.css'
 
-// let dataUrl="https://s3kamble.github.io/webpage-rendering-data/blogData.json";
+// let dataUrl="https://blogs-data.herokuapp.com/blogs";
 let dataUrl="http://localhost:4000/blogs"
 
 
@@ -18,17 +18,10 @@ function Blog(){
         .then((response)=>{
             return response.json()
         })
-        .then((data)=>{
-            console.log(data)   
-            // const foundBlog = data.find(blog => blog.id === params.id); 
-            const foundBlog = data.data.find(blog => blog.blogId === params.id); 
-            
+        .then((data)=>{          
+            const foundBlog = data.data.find(blog => blog.blogId === params.id);           
             setBlog(foundBlog)
-            // setLinks(foundBlog.links)
             setLinks(foundBlog.relatedLinks)
-       console.log(typeof(foundBlog.createdAt))
-
-
         })
         .catch((err)=>{
             console.log(err)
@@ -39,9 +32,7 @@ function Blog(){
 
     return(
         <div>
-           {/* <h2>{blog.title}</h2> */}
-           {/* <img src={blog.imageUrl} alt="Blog Image" /> */}
-           {/* <div>{blog.content}</div> */}
+         
 
            <div className={styles.blogInfo}>            
                <img src={blog.blogImage} alt="Blog" className={styles.blogImage} />

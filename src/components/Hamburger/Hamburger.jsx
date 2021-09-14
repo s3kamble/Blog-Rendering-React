@@ -12,7 +12,6 @@ function Hamburger(){
 
     useEffect(()=>{
         setTimeout(()=>{
-        //    isMenuOpen?setIsMenuOpen(false):" ";
         setIsMenuOpen(false)
         },5000)
     },[isMenuOpen])
