@@ -3,8 +3,8 @@ import {useParams} from "react-router-dom"
 import Aside from '../Aside/Aside';
 import styles from '../Blog/Blog.module.css'
 
-// let dataUrl="https://blogs-data.herokuapp.com/blogs";
-let dataUrl="http://localhost:4000/blogs"
+let dataUrl="https://blogs-data.herokuapp.com/blogs";
+// let dataUrl="http://localhost:4000/blogs"
 
 
 

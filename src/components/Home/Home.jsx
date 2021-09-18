@@ -3,8 +3,8 @@ import Blogs from "../Blogs/Blogs";
 import styles from "../Home/Home.module.css"
 
 
-// let dataUrl="https://blogs-data.herokuapp.com/blogs";
-let dataUrl="http://localhost:4000/blogs"
+let dataUrl="https://blogs-data.herokuapp.com/blogs";
+// let dataUrl="http://localhost:4000/blogs"
 
 
 function Home(){
