@@ -9,7 +9,9 @@ function Navigation(){
     return(
         <div className={styles.navBar}>
             <div className={styles.logo}>
-                <img className={styles.logoImg} src={logo} alt="Logo"></img>
+                <Link to="/">
+                   <img className={styles.logoImg} src={logo} alt="Logo"></img>
+                </Link>
             </div>
             <div className={styles.title}>
                 <h1>TRAVEL-O-(B)LOG</h1>

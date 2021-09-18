@@ -11,7 +11,9 @@ function Footer(){
     return(
         <div className={styles.footerBar}>
             <div className={styles.logo}>
-                <img className={styles.logoImg} src={logo} alt="Logo"></img>
+                <Link to="/">
+                   <img className={styles.logoImg} src={logo} alt="Logo"></img>
+                </Link>
             </div>
             <div className={styles.title}>
                 <h3><FontAwesomeIcon icon={faCopyright} />Privacy Policy</h3>
