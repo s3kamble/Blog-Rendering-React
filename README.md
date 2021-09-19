@@ -1,4 +1,4 @@
-# <i>Travel-O-(B)log</i>
+# <i><u>Travel-O-(B)log</u></i>
 - This front-end-application renders list of travel-blogs you can read from.
 - Click on any one from the list to read the complete Blog.
 - [Check here](https://nostalgic-knuth-f4a105.netlify.app/)
@@ -38,7 +38,7 @@
 
 <br>
 
-# <i>Overview</i>
+# <i><u>Overview</u></i>
 
 # <b>Prerequisites</b>
 - Knowledge Of Javascript(ES5,ES6)
@@ -54,7 +54,7 @@
 
 <br>
 
-# <i>Getting started</i>
+# <i><u>Getting started</u></i>
 
 # <b> Dependencies </b>
 - *** Default ***
@@ -96,7 +96,7 @@
 
 # Installation
 
-1. Open a new termainal window,navigate to the folder where you want the froent-end apllication sub-folder to be created
+1. Open a new termainal window,navigate to the folder where you want the front-end apllication sub-folder to be created
 
 2. Type the following command:
 ```sh
@@ -114,7 +114,7 @@
 
 <br>
 
-# <i>Usage</i>
+# <i><u>Usage</u></i>
 1. Navbar
    <ul>
     <li>  Navbar contains dummy links for:a)Contact b)Feedback  </li>
@@ -139,19 +139,15 @@
 
   <br>
 
-# <i>Functionalities to be added</i>
+# <i><u>Functionalities to be added</u></i>
 - Travel Image Gallery
 - Plan-A-Trip calender displaying current year consecutive holidays
 -Theme change button
 
 
-
-
-
-
 <br>
 
-# <i>Directory tree</i>
+# <i><u>Directory tree</u></i>
 ```
 .
 ├── package.json
